@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        Mission Step
+    </title>
+    <meta charset="utf-8">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="timestop.js"></script>
+        <script>
+            var input = prompt('무인포스트 1번 미션큐알입니다.', '미션코드 입력!');
+               if(input == "VICTORY"){
+                   alert("드디어 미션 시작!");
+
+               }else{
+                   alert("코드가 틀렸습니다.");
+                   window.location.href ="about:blank";
+               }
+        </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Jua&family=Single+Day&display=swap');
+
+        .cntnt {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        border: 1px solid rgb(2, 73, 32);
+        background-color: rgb(155, 245, 152);
+        padding: 0px 15px;
+        }
+
+        .btcnt{
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+
+        #bt1 {
+            background-color: rgb(0, 14, 54); 
+            border: none; 
+            color:white; 
+            padding: 15px 30px; 
+            text-align:center; 
+            font-size: 16px; 
+            margin: 4px 4px; 
+            cursor: pointer;
+        }
+        .center{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+    </style>
+
+    <script>
+
+        function name_1() {
+            var c_name = document.getElementById("nm2").value;
+            var JD_1 = document.getElementById("tp2").value;
+
+
+            if (c_name == "") {
+                alert("팀 번호를 입력해 주셔야 합니다.");
+                return false;
+            }
+            if (JD_1 == "") {
+                alert("정답을 입력해 주셔야 합니다.");
+                return false;
+            }
+            if(JD_1 == "SMSP") {
+                if(c_name=="1"){
+                    alert(c_name+"팀 정답입니다. :)");
+                    window.location.href ="correct page1.html";
+                }
+                if(c_name=="2"){
+                    alert(c_name+"팀 정답입니다. :)");
+                    window.location.href ="success page2.html";
+                }
+                if(c_name=="3"){
+                    alert(c_name+"팀 정답입니다. :)");
+                    window.location.href ="crt 3page.html";
+                }
+                if(c_name=="4"){
+                    alert(c_name+"팀 정답입니다. :)");
+                    window.location.href ="trc 4page.html";
+                }
+                if(c_name=="5"){
+                    alert(c_name+"팀 정답입니다. :)");
+                    window.location.href ="JD 5page.html";
+                }
+                if(c_name>="6"){
+                    alert("그런 팀은 없습니다.");
+                }                               
+            }else{
+                alert("땡! 틀렸습니다.");
+                return false;
+
+            }
+        }
+    </script>
+    </head>
+    <body>  
+        <div class="cntnt">
+            <h1 style="font-family: 'jua', sans-serif; text-align: center;">신입사원 미션트레킹<br>무인 미션 Post 1</h1>
+
+            <p style="width:auto; word-break: keep-all; font-size: 25px; font-family: 'Single Day', cursive;">
+                아래 조건을 만족하는 사진을 찍어 담당자에게 전송하시오.<br>
+                1) 바다가 배경에 나올 것<br>
+                2) 모두가 함께 점프하는 사진일 것<br>
+                3) 찍는 사람 제외하고 전부 화면에 나올 것<br>
+                4) 야외에서 촬영할 것<br>
+            </p>
+            <img src="4.jpg" class="center">
+            <p style="text-align: center; width:auto; word-break: keep-all; font-size: 25px; font-family: 'Single Day', cursive;">
+                (함께 전송해야 할 문구 : __팀 1번 무인 포스트 미션 사진입니다.)<br>
+            </p>
+        </div>
+
+    </body>
+</html>
