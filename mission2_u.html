@@ -55,52 +55,7 @@
 
     </style>
 
-    <script>
 
-        function name_1() {
-            var c_name = document.getElementById("nm2").value;
-            var JD_1 = document.getElementById("tp2").value;
-
-
-            if (c_name == "") {
-                alert("팀 번호를 입력해 주셔야 합니다.");
-                return false;
-            }
-            if (JD_1 == "") {
-                alert("정답을 입력해 주셔야 합니다.");
-                return false;
-            }
-            if(JD_1 == "SMSP") {
-                if(c_name=="1"){
-                    alert(c_name+"팀 정답입니다. :)");
-                    window.location.href ="correct page1.html";
-                }
-                if(c_name=="2"){
-                    alert(c_name+"팀 정답입니다. :)");
-                    window.location.href ="success page2.html";
-                }
-                if(c_name=="3"){
-                    alert(c_name+"팀 정답입니다. :)");
-                    window.location.href ="crt 3page.html";
-                }
-                if(c_name=="4"){
-                    alert(c_name+"팀 정답입니다. :)");
-                    window.location.href ="trc 4page.html";
-                }
-                if(c_name=="5"){
-                    alert(c_name+"팀 정답입니다. :)");
-                    window.location.href ="JD 5page.html";
-                }
-                if(c_name>="6"){
-                    alert("그런 팀은 없습니다.");
-                }                               
-            }else{
-                alert("땡! 틀렸습니다.");
-                return false;
-
-            }
-        }
-    </script>
     </head>
     <body>  
         <div class="cntnt">
